@@ -23,11 +23,21 @@ $sm-width: 576px
 @for $i from 1 through $columns
     .col-#{$i}
         flex: 0 0 calc(100% / $columns * $i)
+    .col-offset-#{$i}
+        margin-left: calc(100% / $columns * ($i - 1))
     .col-xl-#{$i}
         flex: 0 0 calc($xl-width / $columns * $i)
+    .col-offset-xl-#{$i}
+        margin-left: calc($xl-width / $columns * ($i - 1))
     .col-lg-#{$i}
         flex: 0 0 calc($lg-width / $columns * $i)
+    .col-offset-lg-#{$i}
+        margin-left: calc($lg-width / $columns * ($i - 1))
     .col-md-#{$i}
         flex: 0 0 calc($md-width / $columns * $i)
+    .col-offset-md-#{$i}
+        margin-left: calc($md-width / $columns * ($i - 1))
     .col-sm-#{$i}
         flex: 0 0 calc($sm-width / $columns * $i)
+    .col-offset-sm-#{$i}
+        margin-left: calc($sm-width / $columns * ($i - 1))

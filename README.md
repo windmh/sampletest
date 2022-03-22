@@ -1,4 +1,4 @@
-This project using sass compiler
+# This project using sass compiler
 
 ## install sass via npm
 
@@ -6,4 +6,6 @@ This project using sass compiler
 
 ## sass waching command
 
-`sass -w --style=compressed sass/main.sass:css/main.css` for watching sass file to compile css file
+`sass -w --style=compressed sass/main.sass:css/main.css` 
+
+for watching sass file to compile css file as compressed mode
