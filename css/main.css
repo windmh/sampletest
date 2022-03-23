@@ -644,6 +644,11 @@ button {
 .header__wrapper img {
   width: 60px;
   height: 60px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.header__wrapper img:hover {
+  transform: scale(1.2);
 }
 .header__wrapper button {
   width: 300px;
@@ -652,6 +657,12 @@ button {
   padding: 1rem;
   font-size: 1.2rem;
   text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.header__wrapper button:hover {
+  background-color: #282828;
+  color: #ff6d6d;
 }
 
 .banner-left {
