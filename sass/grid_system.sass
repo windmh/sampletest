@@ -1,10 +1,12 @@
-*
+*, *:before, *:after
     box-sizing: border-box
 
 body
     font-family: sans-serif
 
 .container
+    display: flex
+    align-items: stretch
     width: calc(100% - 10rem)
     margin: 0 auto
 
@@ -13,6 +15,20 @@ body
 .row
     display: flex
     flex-wrap: wrap
+    align-items: stretch
+    flex-direction: row
+
+.direction-column
+    flex-direction: column
+
+.direction-row
+    flex-direction: row
+
+.justify-content-center
+    justify-content: center
+
+.align-items-center
+    align-items: center
 
 $columns: 12
 $xl-width: 1200px
