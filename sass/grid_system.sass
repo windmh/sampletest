@@ -7,8 +7,17 @@ body
 .container
     display: flex
     align-items: stretch
-    width: calc(100% - 10rem)
     margin: 0 auto
+    @include container_xl
+    @include container_lg
+    @include container_md
+    @include container_sm
+    @include container_xs
+
+.container-fluid
+    @extend .container
+    @include container_fluid
+    
 
 // div[class^="col-"]
 
@@ -17,6 +26,9 @@ body
     flex-wrap: wrap
     align-items: stretch
     flex-direction: row
+
+.f-nowrap
+    flex-wrap: nowrap
 
 .direction-column
     flex-direction: column
