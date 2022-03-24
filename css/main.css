@@ -257,4 +257,56 @@ body {
   text-align: center;
 }
 
+.footer {
+  min-height: 330px;
+  position: relative;
+}
+.footer > .container {
+  min-height: 330px;
+}
+.footer-label {
+  font-weight: 400;
+  font-size: 1.4rem;
+  height: 65px;
+  display: flex;
+  align-items: center;
+}
+.footer-info {
+  color: #717171;
+  line-height: 20px;
+}
+.footer-menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer-menu ul li {
+  cursor: pointer !important;
+}
+.footer-menu ul li a {
+  text-decoration: none;
+  color: #717171;
+  cursor: pointer !important;
+}
+.footer-form input.form-control {
+  text-indent: 30px;
+}
+.footer-form .input-group-text {
+  background: #ff8a8a;
+  padding: 0;
+  margin: 0;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+.footer-form .input-group-text:hover {
+  background: #282828;
+}
+.footer-form .input-group-text button {
+  padding: 5px 10px;
+  outline: none !important;
+  border: none !important;
+  border-radius: 2px !important;
+  background: none;
+}
+
 /*# sourceMappingURL=main.css.map */

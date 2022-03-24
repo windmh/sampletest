@@ -1,0 +1,52 @@
+$footer_height: 330px
+
+.footer
+    min-height: $footer_height
+    position: relative
+
+    &>.container
+        min-height: $footer_height
+
+    &-label
+        font-weight: 400
+        font-size: 1.4rem
+        height: 65px
+        display: flex
+        align-items: center
+
+    &-info
+        color: $text_color
+        line-height: 20px
+
+    &-menu
+        ul
+            display: flex
+            flex-direction: column
+            gap: 20px
+            li
+                cursor: pointer !important
+                a
+                    text-decoration: none
+                    color: $text_color
+                    cursor: pointer !important
+
+    &-form
+        input.form-control
+            text-indent: 30px
+        .input-group-text
+            background: $background_rectangle_color
+            padding: 0
+            margin: 0
+            border: none
+            transition: all .3s ease-in-out
+            &:hover
+                background: $primary_color
+            button
+                padding: 5px 10px
+                outline: none !important
+                border: none !important
+                border-radius: 2px !important
+                background: none
+                // &:hover
+                //     background: $primary_color
+            
