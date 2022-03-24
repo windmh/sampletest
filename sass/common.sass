@@ -3,15 +3,6 @@
 body
     font-family: 'Lato', sans-serif
 
-button
-    outline: none
-    background: none
-    border: none
-
-.d-flex
-    display: flex
-    align-items: stretch
-
 .title
     color: $primary-color
     font-size: 3rem
@@ -22,3 +13,8 @@ button
 
 .subtitle
     color: $secondary-color
+    text-transform: uppercase
+
+@for $i from 1 through 5
+    .spacing-#{$i}
+        gap: #{$i}rem !important
