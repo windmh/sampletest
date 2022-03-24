@@ -222,4 +222,25 @@ body {
   text-align: left;
 }
 
+.client {
+  min-height: 650px;
+  background-image: url(../images/bg-client.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.client > .container {
+  min-height: 650px;
+}
+.client-item > * {
+  color: white;
+}
+.client-item-name {
+  font-size: 1.3rem;
+}
+.client-item-posision {
+  font-size: 1rem;
+  color: #ff8a8a !important;
+}
+
 /*# sourceMappingURL=main.css.map */
