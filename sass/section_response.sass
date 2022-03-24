@@ -1,0 +1,38 @@
+$section_response_height: 550px
+
+.response
+    min-height: $section_response_height
+    background: white
+    position: relative
+    overflow: hidden
+    &>.container
+        min-height: $section_response_height
+    .background_rectangle
+        top: 10%
+        left: -60%
+        height: 1300px
+        width: 1300px
+        transform: rotate(45deg)
+    &-left
+        z-index: 2
+        &__img
+            width: 400px
+            height: 400px
+            position: relative
+            display: inline-block
+            // overflow: hidden
+            margin: 0
+            img
+                display: block
+                position: absolute
+                top: 50%
+                left: 50%
+                // min-height: 100%
+                // min-width: 100%
+                transform: translate(-50%, -50%) scale(0.7)
+
+    &-right
+        z-index: 2
+        &__wrapper
+            &-description
+                text-align: left

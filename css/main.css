@@ -41,6 +41,7 @@ table {
 
 body {
   font-family: "Lato", sans-serif;
+  overflow-x: hidden;
 }
 
 .title {
@@ -56,6 +57,22 @@ body {
 .subtitle {
   color: #ff6d6d;
   text-transform: uppercase;
+  margin-bottom: 0.7rem;
+}
+
+[class*="*description"] {
+  font-family: "Exo", sans-serif;
+}
+
+.background_rectangle {
+  background: #ff8a8a;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1300px;
+  height: 1300px;
+  z-index: 1;
+  opacity: 1;
 }
 
 .spacing-1 {
@@ -163,6 +180,46 @@ body {
 }
 .features-about__column-description {
   text-align: center;
+}
+
+.response {
+  min-height: 550px;
+  background: white;
+  position: relative;
+  overflow: hidden;
+}
+.response > .container {
+  min-height: 550px;
+}
+.response .background_rectangle {
+  top: 10%;
+  left: -60%;
+  height: 1300px;
+  width: 1300px;
+  transform: rotate(45deg);
+}
+.response-left {
+  z-index: 2;
+}
+.response-left__img {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  display: inline-block;
+  margin: 0;
+}
+.response-left__img img {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.7);
+}
+.response-right {
+  z-index: 2;
+}
+.response-right__wrapper-description {
+  text-align: left;
 }
 
 /*# sourceMappingURL=main.css.map */

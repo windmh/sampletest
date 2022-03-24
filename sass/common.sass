@@ -2,6 +2,7 @@
 
 body
     font-family: 'Lato', sans-serif
+    overflow-x: hidden
 
 .title
     color: $primary-color
@@ -14,6 +15,20 @@ body
 .subtitle
     color: $secondary-color
     text-transform: uppercase
+    margin-bottom: 0.7rem
+
+[class*="*description"]
+    font-family: "Exo", sans-serif
+
+.background_rectangle
+    background: $background_rectangle_color
+    position: absolute
+    top: 0
+    left: 0
+    width: 1300px
+    height: 1300px
+    z-index: 1
+    opacity: 1
 
 @for $i from 1 through 5
     .spacing-#{$i}
