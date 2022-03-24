@@ -243,4 +243,18 @@ body {
   color: #ff8a8a !important;
 }
 
+.browser {
+  min-height: 750px;
+  padding-top: 7vh;
+}
+.browser > .container {
+  min-height: 750px;
+}
+.browser-title {
+  max-width: 50vw;
+}
+.browser-title > * {
+  text-align: center;
+}
+
 /*# sourceMappingURL=main.css.map */
